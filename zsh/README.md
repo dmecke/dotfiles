@@ -5,7 +5,7 @@ sudo apt install zsh
 # make zsh default shell
 chsh -s $(which zsh)
 
-# restart shell
+# restart shell - maybe even logout and back in to gnome
 
 # install oh-my-zsh (https://ohmyz.sh/)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

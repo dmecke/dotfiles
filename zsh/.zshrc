@@ -82,6 +82,7 @@ plugins=(
     git
     thefuck
     web-search
+    z
     zsh-autosuggestions
     zsh-syntax-highlighting
 )

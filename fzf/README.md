@@ -7,6 +7,9 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 # execute install script
 ~/.fzf/install
+
+# symlink
+cd ~/dotfiles && stow fzf
 ```
 
 ## update

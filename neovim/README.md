@@ -6,5 +6,8 @@ sudo tar -C /opt -xzf nvim-linux64.tar.gz
 
 # install ripgrep dependency
 sudo apt install ripgrep
+
+# enable symlinks
+stow neovim
 ```
 

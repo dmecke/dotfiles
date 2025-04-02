@@ -5,7 +5,7 @@ alias tunnel-db-stage='ssh -L 33307:10.2.116.207:3306 rumpelstilzchen.kigaroo.co
 # kigaroo
 alias kigaroo_cd="cd /home/dmecke/projects/kigaroo"
 alias kigaroo_start_webpack="kigaroo_cd && yarn run dev"
-alias kigaroo_setup="use_php82 && restart_apache && restart_mysql"
+alias kigaroo_setup="use_php83 && restart_apache && restart_mysql"
 alias kigaroo_run_phpcs="kigaroo_cd && ./vendor/squizlabs/php_codesniffer/bin/phpcs"
 alias kigaroo_run_phpcbf="kigaroo_cd && ./vendor/squizlabs/php_codesniffer/bin/phpcbf"
 alias kigaroo_run_phpmd="kigaroo_cd && php ./bin/phpmd.phar src/ text phpmd.xml"

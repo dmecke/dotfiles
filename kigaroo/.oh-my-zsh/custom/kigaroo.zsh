@@ -17,3 +17,6 @@ alias kigaroo_run_unit_tests="kigaroo_cd && ./vendor/phpunit/phpunit/phpunit --t
 alias kigaroo_run_functional_tests="kigaroo_cd && ./vendor/phpunit/phpunit/phpunit --testsuite=functional --configuration=app/phpunit.xml.dist"
 alias kigaroo_preflight="./vendor/squizlabs/php_codesniffer/bin/phpcs & php ./bin/phpmd.phar src/ text phpmd.xml & ./vendor/phpstan/phpstan/phpstan analyze --no-progress & ./bin/psalm --config=psalm.xml --threads=2 --memory-limit=6G --no-progress & ./vendor/phpunit/phpunit/phpunit --testsuite=unit --configuration=app/phpunit.xml.dist"
 
+# sph completion
+eval "$(sph completion:zsh)"
+

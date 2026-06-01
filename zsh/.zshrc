@@ -121,7 +121,10 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # https://github.com/ajeetdsouza/zoxide
-eval "$(zoxide init --cmd cd zsh)"
+# Skip inside Claude Code, where the `cd`-override breaks the Bash tool.
+if [[ -z "$CLAUDECODE" ]]; then
+    eval "$(zoxide init --cmd cd zsh)"
+fi
 
 
 . "$HOME/.atuin/bin/env"
